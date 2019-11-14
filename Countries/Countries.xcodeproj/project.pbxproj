@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3822976B237DFEB4000A11FE /* ARCountry.m in Sources */ = {isa = PBXBuildFile; fileRef = 3822976A237DFEB4000A11FE /* ARCountry.m */; };
+		3822976E237DFF44000A11FE /* Country Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3822976D237DFF44000A11FE /* Country Controller.swift */; };
+		38229773237E076C000A11FE /* ARCountriesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38229772237E076C000A11FE /* ARCountriesTableViewController.m */; };
 		6E610924237DF5B200758352 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E610923237DF5B200758352 /* AppDelegate.m */; };
 		6E610927237DF5B200758352 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E610926237DF5B200758352 /* SceneDelegate.m */; };
 		6E61092D237DF5B200758352 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E61092B237DF5B200758352 /* Main.storyboard */; };
@@ -16,6 +19,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		38229769237DFEB4000A11FE /* ARCountry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARCountry.h; sourceTree = "<group>"; };
+		3822976A237DFEB4000A11FE /* ARCountry.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARCountry.m; sourceTree = "<group>"; };
+		3822976C237DFF44000A11FE /* Countries-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Countries-Bridging-Header.h"; sourceTree = "<group>"; };
+		3822976D237DFF44000A11FE /* Country Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Country Controller.swift"; sourceTree = "<group>"; };
+		38229771237E076C000A11FE /* ARCountriesTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARCountriesTableViewController.h; sourceTree = "<group>"; };
+		38229772237E076C000A11FE /* ARCountriesTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARCountriesTableViewController.m; sourceTree = "<group>"; };
 		6E61091F237DF5B200758352 /* Countries.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Countries.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E610922237DF5B200758352 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6E610923237DF5B200758352 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -39,6 +48,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3822976F237DFFD9000A11FE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				38229769237DFEB4000A11FE /* ARCountry.h */,
+				3822976A237DFEB4000A11FE /* ARCountry.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		38229770237DFFE1000A11FE /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3822976D237DFF44000A11FE /* Country Controller.swift */,
+			);
+			path = "Model Controller";
+			sourceTree = "<group>";
+		};
+		38229774237E0774000A11FE /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				38229771237E076C000A11FE /* ARCountriesTableViewController.h */,
+				38229772237E076C000A11FE /* ARCountriesTableViewController.m */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
 		6E610916237DF5B200758352 = {
 			isa = PBXGroup;
 			children = (
@@ -59,8 +94,10 @@
 			isa = PBXGroup;
 			children = (
 				6E61093B237DF5CC00758352 /* Storyboards */,
+				3822976F237DFFD9000A11FE /* Model */,
+				38229770237DFFE1000A11FE /* Model Controller */,
 				6E61093C237DF5DC00758352 /* Resources */,
-				6E610933237DF5B300758352 /* Info.plist */,
+				38229774237E0774000A11FE /* View Controllers */,
 			);
 			path = Countries;
 			sourceTree = "<group>";
@@ -77,12 +114,14 @@
 		6E61093C237DF5DC00758352 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				3822976C237DFF44000A11FE /* Countries-Bridging-Header.h */,
 				6E61092E237DF5B300758352 /* Assets.xcassets */,
 				6E610922237DF5B200758352 /* AppDelegate.h */,
 				6E610923237DF5B200758352 /* AppDelegate.m */,
 				6E610925237DF5B200758352 /* SceneDelegate.h */,
 				6E610926237DF5B200758352 /* SceneDelegate.m */,
 				6E610934237DF5B300758352 /* main.m */,
+				6E610933237DF5B300758352 /* Info.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -118,6 +157,7 @@
 				TargetAttributes = {
 					6E61091E237DF5B200758352 = {
 						CreatedOnToolsVersion = 11.2;
+						LastSwiftMigration = 1110;
 					};
 				};
 			};
@@ -157,7 +197,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38229773237E076C000A11FE /* ARCountriesTableViewController.m in Sources */,
+				3822976E237DFF44000A11FE /* Country Controller.swift in Sources */,
 				6E610924237DF5B200758352 /* AppDelegate.m in Sources */,
+				3822976B237DFEB4000A11FE /* ARCountry.m in Sources */,
 				6E610935237DF5B300758352 /* main.m in Sources */,
 				6E610927237DF5B200758352 /* SceneDelegate.m in Sources */,
 			);
@@ -299,15 +342,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = K3F959XXFV;
-				INFOPLIST_FILE = Countries/Info.plist;
+				DEVELOPMENT_TEAM = RCQFNX9QQ7;
+				INFOPLIST_FILE = Countries/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mitchellgbudge.Countries;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexandrarhodes.Countries;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Countries/Resources/Countries-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -316,15 +364,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = K3F959XXFV;
-				INFOPLIST_FILE = Countries/Info.plist;
+				DEVELOPMENT_TEAM = RCQFNX9QQ7;
+				INFOPLIST_FILE = Countries/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mitchellgbudge.Countries;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexandrarhodes.Countries;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Countries/Resources/Countries-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
